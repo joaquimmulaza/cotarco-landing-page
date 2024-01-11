@@ -189,6 +189,14 @@ header label{
     font-size: 1.4em !important;
 }
 
+.align-left{
+    text-align: left !important;
+}
+
+.lacor-content{
+    margin-bottom: 49px;
+}
+
 
 .features .box-container .box{
     /* flex:1 1 30rem; */
