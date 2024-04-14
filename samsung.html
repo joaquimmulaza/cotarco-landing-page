@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotarco Tecnologias e Comercio Lda</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/COTARCO icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+
+</head>
+
+<body>
+<!-- inicio seção de cabeçalho -->
+
+<header>
+
+    <a href="#" class="logo"><img src="images/COTARCO logotipo-02.png" class="logotipo" alt=""></a>
+
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fas fa-bars"></label>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#features">Serviços</a>
+        <a href="#marcas">Marcas</a>
+        <a href="#about">Sobre</a>
+        <!-- <a href="#review">review</a> -->
+        <!-- <a href="#pricing">pricing</a> -->
+        <a href="#contact">Contacto</a>
+        <a href="#" class="job">Recrutamento</a>
+    </nav>
+
+</header>
+
+<!-- fim seção de cabeçalho -->
+
+<!-- Swiper -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/slades/Home_KV_Buy-Now_Desktop_1440x640.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/slades/Home_KV_QLED-Series_Desktop_1440x640.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/slades/HP_SDSAC-7353_Buds2_Pro_HP_KV_DT_1440x640.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/slades/KV_DT.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/slades/LDY-HP-DT.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/slades/SDSAC-7339-S24U-Exclusive-Colors-HP-KV-DT-1440x640.webp" />
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+    
+
+    <!-- seção de rodapé inicio -->
+
+<div class="footer">
+    
+    <div class="box-container">
+        <div class="box">
+            <h3>Siga-nos</h3>
+            <div class="social">
+                <a href="https://www.facebook.com/cotarcoloja" target="_blank"><i class="fab fa-facebook ico"></i></a>
+
+                <a href="https://www.instagram.com/cotarcoloja/" target="_blank"><i class="fab fa-instagram ico"></i></a>
+        
+                <a href="https://www.linkedin.com/in/cotarcolda/" target="_blank"><i class="fab fa-linkedin ico"></i></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Informações de contatos</h3>
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <p> +244 923 170 012 <br> +244 928 157 538 </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:geral@cotarco.com">geral@cotarco.com</a>
+            </div>
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> Município de Talatona <br> Avenida Samora Machel </p>
+            </div>
+        </div>
+    </div>
+<h1 class="credit"> &copy; 2024 Cotarco, Todos direitos reservados </h1>
+</div>
+<!-- seção de rodapé fim-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+    <script src="js/script.js"></script>
+</body>
