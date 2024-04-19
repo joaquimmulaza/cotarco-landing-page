@@ -199,6 +199,7 @@ button{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2.5rem;
+    background-color: #f3f3f3;
 }
 .small_banners {
     display: flex;
@@ -242,7 +243,7 @@ button{
     font-weight: 600;
     width: 6.25rem;
     padding: 0.563rem;
-    border-radius: 1.25rem;
+    border-radius: 20px;
     margin-left: 16.25rem;
     margin-top: 38.75rem;
     opacity: 1;
@@ -258,6 +259,7 @@ button{
     position: relative;
     object-fit: contain;
     transition: transform 0.1s ease-in-out;
+    background-color: red;
 }
 .banner-2:hover {
     transform: scale(1.03);
@@ -295,7 +297,7 @@ button{
 .banner-3 {
     background-image: url(./Resources/EPP_Generic_330x330_Grey_background.avif);
     height: 20.625rem;
-    border-radius: 1.563rem;
+    border-radius: 20px;
     overflow: hidden;
     position: relative;
     object-fit: contain;
@@ -497,7 +499,7 @@ button{
 /* Third Poster */
 
 .third_advertise_banner {
-    background-image: url(./Resources/Qled-4K_1440x8104.jpg);
+    background-image: url(./Resources/2023_Home_GBM_Product_marketing_Neo_QLED_Lifestyle_PC_aem_1440x810\ [MConverter.eu].jpg);
     background-size: 100%;
     height: 100%;
     display: flex;
@@ -511,16 +513,18 @@ button{
     font-size: 2.375rem;
     font-family: 'Samsung Sharp Sans', sans-serif; 
     font-weight: bold;
+    color: #fff;
 }
 .tv_menu{
     padding: 0.625rem;
     margin-bottom: 28.25rem;
 }
+
 .tv_menu a {
     margin: 1.563rem;
     font-size: 1.125rem;
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-weight: 700;
     margin-bottom: 3.75rem;
     padding: 0.625rem;
@@ -538,16 +542,22 @@ button{
     border-bottom-style: solid;
     border-bottom-width: 0.188rem;
 }
-.product_name p {
+.third_advertise_banner .product_name p {
     margin: 1.25rem;
     font-size: 2.875rem;
     border-bottom: 0.938rem;
     font-weight: bold;
     font-family: 'Samsung Sharp Sans', sans-serif; 
+    color: #fff;
 }
 .third_advertise_banner .price_offers p {
     font-size: 1rem;
     text-align: center;
+    color: #fff;
+}
+.third_advertise_banner .bottom_buttons button{
+    background-color: #fff;
+    color: #000;
 }
 .bottom_buttons {
     display: flex;
@@ -678,11 +688,14 @@ button{
     position: absolute;
     border: none;
     color: white;
-    width: 2.5rem;
-    height: 1.25rem;
+    height: 20px;
+    padding: 2px 6px;
+    font-size: 12px;
+    line-height: 16px;
     margin-top: 0.938rem;
     margin-left: 0.938rem;
-    border-radius: 1.125rem;
+    font-weight: 700;
+    border-radius: 10px;
 }
 .card .device_name p {
     text-align: center;
@@ -962,6 +975,7 @@ button{
     
     margin: 0.188rem;
     font-size: 0.75rem;
+    font-weight: normal;
     width: 7.5rem;
     height: 2rem;
     border-radius: 1.563rem;
@@ -1003,7 +1017,7 @@ button{
     width: 31.25rem;
     padding: 1.563rem;
     /* border-right: 1px solid #C7C7C7; */
-    border-left: 1px solid #C7C7C7;
+    /* border-left: 1px solid #C7C7C7; */
 }
 .Section h3 {
     padding: 0.625rem;
