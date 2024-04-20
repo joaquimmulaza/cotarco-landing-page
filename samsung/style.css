@@ -16,6 +16,10 @@ main {
     font-family: 'Samsung Sharp Sans', sans-serif; 
 }
 
+a{
+    color: #000;
+}
+
 
 /* nav_bar styling start */
 
