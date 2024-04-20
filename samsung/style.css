@@ -129,6 +129,7 @@ main {
 .content h3 {
     font-size: 1rem;
     margin-bottom: 3.125rem;
+    font-weight: normal;
 }
 .content div {
     display: flex;
@@ -200,12 +201,15 @@ button{
     flex-wrap: wrap;
     gap: 2.5rem;
     background-color: #f3f3f3;
+    justify-content: center;
 }
 .small_banners {
     display: flex;
     width: 50%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 @media only screen and (max-width: 900px) {
     .multiple_banners {
@@ -218,13 +222,17 @@ button{
     }
 }
 
+.cards-news{
+    width: 100%;
+}
+
 /* Banner-1 */
 
 .small_banners_width {
     width: 48%;
 }
 .banner-1 {
-    background-image: url(./Resources/Big-Tile-PC_1.webp);
+    background-image: url(./Resources/IA\ cONTROL.jpg);
     height: 42.5rem;
     width: 40.5rem;
     border-radius: 1.563rem;
@@ -252,14 +260,13 @@ button{
 /* Banner-2 */
 
 .banner-2 {
-    background-image: url(./Resources/S24_Ultra_Small.avif);
+    /* background-image: url(./Resources/2.png); */
     height: 20.625rem;
-    border-radius: 1.563rem;
+    border-radius: 20px;
     overflow: hidden;
     position: relative;
     object-fit: contain;
     transition: transform 0.1s ease-in-out;
-    background-color: red;
 }
 .banner-2:hover {
     transform: scale(1.03);
@@ -295,7 +302,7 @@ button{
 /* Banner-3 */
 
 .banner-3 {
-    background-image: url(./Resources/EPP_Generic_330x330_Grey_background.avif);
+    /* background-image: url(./Resources/1.jpg); */
     height: 20.625rem;
     border-radius: 20px;
     overflow: hidden;
@@ -303,6 +310,12 @@ button{
     object-fit: contain;
     transition: transform 0.1s ease-in-out;
 }
+
+.banner-3 img, .banner-2 img, .banner-4 img, .banner-5 img{
+
+    border-radius: 20px;
+}
+
 .banner-3:hover{
     transform: scale(1.03);
 }
@@ -340,9 +353,9 @@ button{
 /* Banner-4 */
 
 .banner-4 {
-    background-image: url(./Resources/Small_Tile_330x330_8kg_AI_Ecobubble1.avif);
+    /* background-image: url(./Resources/A15.png); */
     height: 20.625rem;
-    border-radius: 1.563rem;
+    border-radius: 20px;
     overflow: hidden;
     position: relative;
     object-fit: contain;
@@ -384,9 +397,9 @@ button{
 /* Banner-5 */
 
 .banner-5 {
-    background-image: url(./Resources/Small-Tile_330x330-UHD-4K-CUE.avif);
-    height: 330px;
-    border-radius: 25px;
+    /* background-image: url(./Resources/A25.png); */
+    height: 20.625rem;
+    border-radius: 20px;
     overflow: hidden;
     position: relative;
     object-fit: contain;
@@ -418,7 +431,10 @@ button{
     margin-top: 11.875rem;
 }
 .text p {
-    margin-bottom: 20px;
+    position: relative;
+    top: 80px;
+    z-index: 999;
+    color: red;
 }
 .text span {
     color: #787976;
@@ -666,7 +682,19 @@ button{
     width: 16.875rem;
     height: 38.875rem;
     margin: 0.625rem;
+    text-align: center;
 }
+
+#maquina-lavar{
+    width: 170px;
+    position: relative;
+    bottom: 40px;
+}
+
+#card-maquina-lavar{
+    margin-top: 82px;
+}
+
 /* @media screen and (max-width:900px) {
     .recommended_products {
         display: flex;
@@ -679,6 +707,7 @@ button{
         flex-direction: column;
     }
 }
+
 .card img {
     padding: 1.25rem;
     margin-top: 1.25rem;
@@ -693,7 +722,8 @@ button{
     font-size: 12px;
     line-height: 16px;
     margin-top: 0.938rem;
-    margin-left: 0.938rem;
+  
+    display: none;
     font-weight: 700;
     border-radius: 10px;
 }
@@ -736,7 +766,7 @@ button{
     margin: 0.625rem;
     width: 1.125rem;
     height: 1.125rem;
-    background-color: #4D4E5F;
+    background-color: #000;
     border-radius: 50%;
     border: 1px solid black;
 }
@@ -769,6 +799,22 @@ button{
     width: 1.125rem;
     height: 1.125rem;
     background-color: #F8F2E2;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.color_selector-10 {
+    margin: 0.625rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.color_selector-11 {
+    margin: 0.625rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: #413b51;
     border-radius: 50%;
     border: 1px solid black;
 }
