@@ -203,17 +203,20 @@ button{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2.5rem;
     background-color: #f3f3f3;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 708px;
 }
 .small_banners {
     display: flex;
+    padding-top: 10px;
     width: 50%;
     flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+    justify-content: end;
+    text-align: end;
+    height: 100%;
 }
 @media only screen and (max-width: 900px) {
     .multiple_banners {
@@ -236,10 +239,8 @@ button{
     width: 48%;
 }
 .banner-1 {
-    background-image: url(./Resources/IA\ cONTROL.jpg);
-    height: 42.5rem;
-    width: 40.5rem;
-    border-radius: 1.563rem;
+    /* background-image: url(./Resources/IA\ cONTROL.jpg); */
+    border-radius: 20px;
     overflow: hidden;
     position: relative;
     object-fit: contain;
@@ -248,7 +249,7 @@ button{
 .banner-1:hover {
     transform: scale(1.03);
 }
-.banner-1 button {
+/* .banner-1 button {
     position: relative;
     background-color: black;
     color: white;
@@ -259,13 +260,15 @@ button{
     margin-left: 16.25rem;
     margin-top: 38.75rem;
     opacity: 1;
-}
+} */
 
 /* Banner-2 */
 
 .banner-2 {
     /* background-image: url(./Resources/2.png); */
     height: 20.625rem;
+    width: 330px;
+    text-align: center;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -287,7 +290,10 @@ button{
     margin-top: -2.5rem;
     opacity: 1;
 }
-.banner-2 .text {
+
+/*###### SMALL BANNER STYLES IMPORTANT ########*/
+
+/* .banner-2 .text {
     position: relative;
     display: flex;
     font-weight: 800;
@@ -296,18 +302,42 @@ button{
     align-items: center;
     margin-left: 0.688rem;
     margin-top: 11.875rem;
+    width: 298px;
+    background-color: red;
+} */
+.text {
+    position: relative;
+    display: flex;
+    font-weight: 800;
+    font-size: 1.125rem;
+    flex-direction: column;
+    align-items: center;
+    width: 298px;
+    z-index: 999999;
+    margin: 0 auto;
+    bottom: 60px;
 }
-.text span {
+
+.banner-desc{
+    width: 100%;
+}
+
+/*Se acontecer algo de errado com nome dos produtos no small banner corrija aqui*/
+
+/* .text span {
     color: #787976;
     font-size: 0.625rem;
     opacity: 0;
-}
-
+} */
+/*######################################################################################*/
 /* Banner-3 */
 
 .banner-3 {
     /* background-image: url(./Resources/1.jpg); */
     height: 20.625rem;
+    width: 330px;
+    margin-left: 50px;
+    text-align: center;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -336,7 +366,7 @@ button{
     margin-top: 0.438rem;
     opacity: 1;
 }
-.banner-3 .text {
+/* .banner-3 .text {
     position: relative;
     display: flex;
     font-weight: 800;
@@ -352,7 +382,7 @@ button{
 .text span {
     color: #787976;
     font-size: 0.625rem;
-}
+} */
 
 /* Banner-4 */
 
@@ -360,6 +390,8 @@ button{
     /* background-image: url(./Resources/A15.png); */
     height: 20.625rem;
     border-radius: 20px;
+    width: 330px;
+    text-align: center;
     overflow: hidden;
     position: relative;
     object-fit: contain;
@@ -380,7 +412,7 @@ button{
     margin-top: 17.188rem;
     opacity: 1;
 }
-.banner-4 .text {
+/* .banner-4 .text {
     position: absolute;
     display: flex;
     font-weight: 800;
@@ -396,7 +428,7 @@ button{
 .text span {
     color: #787976;
     font-size: 0.625rem;
-}
+} */
 
 /* Banner-5 */
 
@@ -405,6 +437,9 @@ button{
     height: 20.625rem;
     border-radius: 20px;
     overflow: hidden;
+    width: 330px;
+    text-align: center;
+    margin-left: 50px;
     position: relative;
     object-fit: contain;
     transition: transform 0.1s ease-in-out;
@@ -424,7 +459,7 @@ button{
     margin-top: 17.188rem;
     opacity: 1;
 }
-.banner-5 .text {
+/* .banner-5 .text {
     position: absolute;
     display: flex;
     font-weight: 800;
@@ -438,12 +473,11 @@ button{
     position: relative;
     top: 80px;
     z-index: 999;
-    color: red;
 }
 .text span {
     color: #787976;
     font-size: 0.625rem;
-}
+} */
 
 /* Second Poster */
 

@@ -159,25 +159,48 @@
 </div>
 <!-- seção de rodapé fim-->
 
+<div class="swiper-container">
+  <div class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide_1">Slide 1</div>
+      <div class="swiper-slide slide_2">Slide 2</div>
+      <div class="swiper-slide slide_3">Slide 3</div>
+      <div class="swiper-slide slide_4">Slide 4</div>
+      <div class="swiper-slide slide_5">Slide 5</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div thumbsSlider="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide_1">Slide 1</div>
+      <div class="swiper-slide slide_2">Slide 2</div>
+      <div class="swiper-slide slide_3">Slide 3</div>
+      <div class="swiper-slide slide_4">Slide 4</div>
+      <div class="swiper-slide slide_5">Slide 5</div>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      effect: "fade",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      autoplay: {
-        delay: 1500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+    //  Initialize Swiper
+let swiper = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+
+let swiper2 = new Swiper(".mySwiper2", {
+  modules: [Thumbs],
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper,
+  },
+});
   </script>
     <script src="js/script.js"></script>
 </body>
