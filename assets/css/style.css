@@ -8,8 +8,6 @@
   cursor: pointer;
 }
 
-
-
 .center-slide{
   display: flex;
   justify-content: center;
@@ -28,7 +26,6 @@
 
 .mySwiper .swiper-slide {
   width: 25%;
-
   height: 100%;
 }
 
@@ -49,4 +46,43 @@
 
 .swiper-button-next, .swiper-button-prev{
   display: none;
+}
+
+/*SECOND SLIDE SWIPERJS*/
+
+.mySwiper3, .mySwiper6, .mySwiper8{
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper4, .mySwiper5, .mySwiper7{
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper4 .swiper-slide, .mySwiper6 .swiper-slide, .mySwiper8 .swiper-slide{
+  width: 25%;
+  height: 100%;
+}
+
+.mySwiper4 .swiper-slide-thumb-active, .mySwiper6, .swiper-slide-thumb-active {
+  opacity: 1;
+  color: #575555;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #000;
+}
+
+/*Texto em cima do slide*/
+.textSlide{
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  font-size: 3em;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  color: #fff;
 }
