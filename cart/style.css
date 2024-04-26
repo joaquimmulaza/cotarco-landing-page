@@ -1,10 +1,10 @@
 .container{
-    width: 900px;
-    margin: auto;
-    max-width: 90vw;
-    text-align: center;
-    padding-top: 10px;
-    transition: transform .5s;
+    width: 900px !important;
+    margin: auto !important;
+    max-width: 90vw !important;
+    text-align: center !important;
+    padding-top: 10px !important;
+    transition: transform .5s !important;
 }
 svg{
     width: 30px;
@@ -17,7 +17,7 @@ svg{
     padding: 20px 0;
 } */
 
-.icon-cart{
+/* .icon-cart{
     position: relative;
 }
 .icon-cart span{
@@ -32,12 +32,12 @@ svg{
     color: #fff;
     top: 50%;
     right: -20px;
-}
+} */
 .title{
     font-size: xx-large;
 }
 .listProduct .item img{
-    width: 90%;
+    width: 100%;
     filter: drop-shadow(0 50px 20px #0009);
 }
 .listProduct{

@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name":"Teste",
+        "price": 200,
+        "image": "image/1.png"
+    },
+    {
+        "id": 2,
+        "name":"Teste",
+        "price": 250,
+        "image": "image/2.png"
+    },
+    {
+        "id": 3,
+        "name":"Teste",
+        "price": 290,
+        "image": "image/3.png"
+    },
+    {
+        "id": 4,
+        "name":"Teste",
+        "price": 200,
+        "image": "image/4.png"
+    }
+
+]

@@ -90,8 +90,18 @@
 /* MODAL POP UP*/
 dialog{
   position: fixed;
-  top: 50%;
-  bottom: 50%;
-  margin: 0 auto;
- 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / .5);
 }
