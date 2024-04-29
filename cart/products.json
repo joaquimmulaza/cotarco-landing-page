@@ -1,27 +1,27 @@
 [
     {
         "id": 1,
-        "name":"Teste",
+        "name":"Galaxy S24 Ultra",
         "price": 200,
-        "image": "image/1.png"
+        "image": "image/s24.webp"
     },
     {
         "id": 2,
-        "name":"Teste",
+        "name":"Galaxy Fit3",
         "price": 250,
-        "image": "image/2.png"
+        "image": "image/fit3.webp"
     },
     {
         "id": 3,
-        "name":"Teste",
+        "name":"SmartTag2",
         "price": 290,
-        "image": "image/3.png"
+        "image": "image/smartags2.webp"
     },
     {
         "id": 4,
-        "name":"Teste",
+        "name":"Maquina de Lavar",
         "price": 200,
-        "image": "image/4.png"
+        "image": "image/maquina-de-lavar.webp"
     }
 
 ]

@@ -79,16 +79,3 @@ var swipper8 = new Swiper(".mySwiper8", {
     swiper: swipper7,
   },
 });
-
-
-const button = document.querySelector(".button button");
-const modal = document.querySelector("dialog")
-const buttonClose = document.querySelector("dialog button")
-
-button.onclick = function () {
-modal.showModal()
-}
-
- buttonClose.onclick = function () {
-   modal.close()
-}

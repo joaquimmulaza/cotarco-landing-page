@@ -24,7 +24,7 @@
 <body>
     <main>
         <!-- Nav_bar starting here -->
-        <header>
+        <header class="fixedHeader">
             <nav class="nav_bar">
                 <div class="samsung_logo">
                     <a href="./index.html"><img src="../images/logo-black.png" alt="Samsung_Logo"></a>
@@ -47,9 +47,7 @@
                                 src="./Resources/search_FILL0_wght400_GRAD0_opsz24.svg" alt="icon"></a>
                     </div>
                     <div class="cart_icon icon-cart">
-                        <a href="https://www.instagram.com/cotarcoloja/" target="_blank">
-                            <img src="./Resources/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" alt="icon">
-                        </a>
+                        <img src="./Resources/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" alt="icon">
                         <span>0</span>
                     </div>
                     <div class="profile_icon">
@@ -555,16 +553,23 @@
         </div>
 
         <!-- Recommended Products -->
-        
         <div class="container">
            
-            <div class="listProduct">
-
+            <div class="listProduct  listProducts">
+            
             </div>  
           
         </div>
+        
+        
         <dialog class="modal">
-            
+            <h1>Pretende incluir:</h1>
+            <div class="container">
+                <div class="newProductContainer listProducts">
+                    <!-- Novos produtos serão renderizados aqui -->
+                </div>
+            </div>  
+            <button class="buttonClose "><img src="../assets/img/xmark-solid.svg" alt=""></button>
         </dialog>
 
         <div class="recommended_products">
@@ -580,7 +585,7 @@
                     </span>
                 </div>
 
-                <div class="card">
+                <div class="card item1">
                     <div class="new">
                         <button>Novidade</button>
                     </div>
@@ -614,9 +619,9 @@
                         </span>
                     </div>
                     <div class="deal">
-                        <!-- <div class="price">
-                            <p>---</p>
-                        </div> -->
+                        <div class="price">
+                            <p>1.999.000.00Kz</p>
+                        </div> 
                         <!-- <div class="offers">
                             <p>MRP(Inclusive of all taxes) <span class="MRP">₹ 144999.00</span><span class="saving">Save
                                     ₹5000.00</span></p>
@@ -624,7 +629,7 @@
                             <span class="EMI_Calculator">EMI Calculator</span>
                         </div> -->
                         <div class="button">
-                            <button>Comprar</button>
+                            <button class="addCart">Comprar</button>
                         </div>
                     </div>
                 </div>
@@ -934,13 +939,13 @@
         </footer>
     </main>
     <div class="cartTab">
-        <h1>Shopping Cart</h1>
+        <h1>Carrinho</h1>
         <div class="listCart">
             
         </div>
         <div class="btn">
-            <button class="close">CLOSE</button>
-            <button class="checkOut">Check Out</button>
+            <button class="close">Fechar</button>
+            <a href="form.html" class="checkOut">Finalizar Compra</a>
         </div>
     </div>
 

@@ -36,31 +36,31 @@ svg{
 .title{
     font-size: xx-large;
 }
-.listProduct .item img{
+.listProducts .item1 img{
     width: 100%;
-    filter: drop-shadow(0 50px 20px #0009);
+    /* filter: drop-shadow(0 50px 20px #0009); */
 }
-.listProduct{
+.listProducts{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.listProduct .item{
-    background-color: #EEEEE6;
+.listProducts .item1{
+    background-color: #F7F7F7;
     padding: 20px;
     border-radius: 20px;
 }
-.listProduct .item h2{
+.listProducts .item1 h2{
     font-weight: 500;
     font-size: large;
 }
-.listProduct .item .price{
+.listProducts .item1 .price{
     letter-spacing: 7px;
     font-size: small;
 }
-.listProduct .item button{
-    background-color: #353432;
-    color: #eee;
+.listProducts .item1 button{
+    background-color: #000;
+    color: #fff;
     border: none;
     padding: 5px 10px;
     margin-top: 10px;
@@ -79,6 +79,7 @@ svg{
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: .5s;
+    z-index: 9999;
 }
 body.showCart .cartTab{
     right: 0;
@@ -95,20 +96,27 @@ body.showCart .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.cartTab button{
+.cartTab a{
     background-color: #E8BC0E;
     border: none;
     font-family: Poppins;
     font-weight: 500;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: bold;
 }
 .cartTab .close{
     background-color: #eee;
 }
-.listCart .item img{
+.listCart .item1 img{
     width: 100%;
 }
-.listCart .item{
+.listCart .item1{
     display: grid;
     grid-template-columns: 70px 150px 50px 1fr;
     gap: 10px;
@@ -129,7 +137,7 @@ body.showCart .container{
     color: #eee;
     cursor: auto;
 }
-.listCart .item:nth-child(even){
+.listCart .item1:nth-child(even){
     background-color: #eee1;
 }
 .listCart{
@@ -139,7 +147,7 @@ body.showCart .container{
     width: 0;
 }
 @media only screen and (max-width: 992px) {
-    .listProduct{
+    .listProducts{
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -147,7 +155,7 @@ body.showCart .container{
 
 /* mobile */
 @media only screen and (max-width: 768px) {
-    .listProduct{
+    .listProducts{
         grid-template-columns: repeat(2, 1fr);
     }
 }
