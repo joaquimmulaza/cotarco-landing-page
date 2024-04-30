@@ -3,25 +3,37 @@
         "id": 1,
         "name":"Galaxy S24 Ultra",
         "price": 200,
-        "image": "image/s24.webp"
+        "image": "image/s24.webp",
+        "cor": "Violeta",
+        "corHexa": "#413b51",
+        "selected": true
     },
     {
         "id": 2,
         "name":"Galaxy Fit3",
         "price": 250,
-        "image": "image/fit3.webp"
+        "image": "image/fit3.webp",
+        "cor": "Preto",
+        "corHexa": "#000",
+        "selected": false 
     },
     {
         "id": 3,
         "name":"SmartTag2",
         "price": 290,
-        "image": "image/smartags2.webp"
+        "image": "image/smartags2.webp",
+        "cor": "Branco",
+        "corHexa": "#fff",
+        "selected": false 
     },
     {
         "id": 4,
         "name":"Maquina de Lavar",
         "price": 200,
-        "image": "image/maquina-de-lavar.webp"
+        "image": "image/maquina-de-lavar.webp",
+        "cor": "Preto",
+        "corHexa": "#000",
+        "selected": false,
+        "variant": true 
     }
-
 ]

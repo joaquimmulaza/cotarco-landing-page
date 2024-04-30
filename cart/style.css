@@ -51,8 +51,11 @@ svg{
     border-radius: 20px;
 }
 .listProducts .item1 h2{
-    font-weight: 500;
-    font-size: large;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
 }
 .listProducts .item1 .price{
     letter-spacing: 7px;

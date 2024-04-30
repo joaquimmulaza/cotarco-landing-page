@@ -30,8 +30,25 @@ const addDataToHTML = () => {
             newProduct.innerHTML =
                 `<img src="${product.image}" alt="">
                 <h2>${product.name}</h2>
-                <div class="price">$${product.price}</div>
-                <button class="addCart">Comprar</button>`;
+                <div class="color">
+                    <p><span>Cor: ${product.cor}</p>
+                    <div class="cor-selector" style="background-color: ${product.corHexa}"></div>
+                    
+                </div>`
+                
+                if (product.variant) {
+                    newProduct.innerHTML += `
+                        <div class="variente">
+                            <div class="selected">7 KG</div>
+                            <p>8 KG</p>
+                        </div>
+                    `;
+                }
+                
+                newProduct.innerHTML += `
+                    <div class="price">$${product.price}</div>
+                    <button class="addCart">Comprar</button>
+                `;
             listProductHTML.appendChild(newProduct);
         });
     }
@@ -180,6 +197,9 @@ const renderNewProducts = (newProducts) => { // Recebe newProducts como parâmet
     let html = ''; // String HTML para armazenar a marcação dos novos produtos
             
     // Iterar sobre os novos produtos e criar a marcação HTML para cada um
+    if (product.selected) {
+        newProduct.innerHTML += `<div class="selected">256 GB</div>`;
+    }
     newProducts.forEach(product => {
         console.log(product); // Adicione esta linha para verificar o objeto product
         html += `

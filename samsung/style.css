@@ -10,6 +10,11 @@
     box-sizing: border-box;
     font-family: 'Samsung Sharp Sans', sans-serif; 
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 main {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -812,6 +817,15 @@ button{
     display: flex;
     justify-content: center;
     /* margin: 20px; */
+}
+
+.cor-selector{
+    margin: 0.625rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0 auto;
 }
 .color_selector-1 {
     margin: 0.625rem;

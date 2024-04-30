@@ -115,3 +115,20 @@ dialog::backdrop {
   border: none;
   cursor: pointer;
 }
+
+
+.selected{
+  border: 1px solid black;
+  padding: 0.438rem;
+  border-radius: 1.563rem;
+}
+
+.variente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    gap: 0.938rem;
+    margin-bottom: 0.75rem;
+}
